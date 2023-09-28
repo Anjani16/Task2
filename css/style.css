@@ -1,0 +1,71 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap');
+body{
+  font-family: 'Poppins', sans-serif;
+}
+.date{
+  background: #ffff url("../images/calendar_icon.png") no-repeat right;
+}
+.size{
+  width: 35%;
+  height: 17%;
+}
+.font{
+  font-size: 12px;
+}
+  .para { 
+    display: flex; 
+    flex-direction: row; 
+    text-transform: uppercase;
+}         
+p:before, 
+p:after { 
+    content: ""; 
+    flex: 1 1; 
+    border-bottom: 2px solid rgb(235, 232, 232); 
+    margin: auto; 
+} 
+.icon{
+          color: rgba(252, 248, 248, 0.815);
+        }
+        .eye{
+    font-size: 13px;
+          color: rgba(98, 179, 73, 0.815);
+        }
+        .delete{
+          font-size: 13px;
+          color: rgba(250, 26, 26, 0.815);
+        }
+        .edit{
+          font-size: 15px;
+          color: rgba(7, 63, 247, 0.815);
+        }
+      .icon-color{
+        color: rgb(255, 255, 255);
+      }
+      .mul{
+        font-size: 20px;
+        color: rgb(255, 255, 255);
+      }
+      .act{
+        background-color: rgb(217, 248, 172);
+        font-size: 12px;
+      }
+      .inact{
+        background-color: rgb(231, 173, 150);
+        font-size: 12px;
+      }
+    .view{
+    background-color: rgb(147, 186, 238);
+    }
+    .tab-color{
+      color:rgb(112, 110, 110);
+    }
+    .edit-font{
+      font-size:14px;
+      color: rgb(83, 82, 82);
+    }
+    /*.image{
+      background-image: url("https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.pngkit.com%2Fview%2Fu2w7i1t4q8a9a9o0_calendar-vector-icon-vector-calendar-icon-png%2F&psig=AOvVaw3DslRCUSdDqVC9SzVpY-ij&ust=1674706335837000&source=images&cd=vfe&ved=0CBAQjRxqFwoTCPio6LTt4fwCFQAAAAAdAAAAABAE");
+        
+    }*/
+    

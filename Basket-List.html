@@ -1,0 +1,496 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0-beta/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.7.1/css/bootstrap-datepicker.css">
+    <link rel="stylesheet" href="css/style.css" type="text/css">
+    <title>Basket-List</title>
+  </head>
+  <body class="font bg-white">
+  <div class="container-fluid shadow-lg my-2">
+  <div class="row">
+  <div class="col">
+        <img class="image-fluid" src="images/img-logo.jpg" alt="Wingman Logo">
+      <nav class="navbar navbar-expand-lg navbar-light float-right">
+        <button class="navbar-toggler bg-dark mt-0" type="button" data-toggle="collapse" data-target="#navbar" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        </button>
+        <div class="collapse navbar-collapse float-right" id="navbar">
+          <ul class="navbar-nav">
+            <li class="nav-item active">
+              <a class="nav-link mx-2" href="#">Dashboard</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-success mx-2" href="#">Recipes</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link mx-2" href="#">Core order</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link mx-2" href="#">Actions</a>
+            </li>
+            <li class="nav-item dropdown mx-4">
+              <a class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-expanded="false">
+                Account
+              </a>
+              <div class="dropdown-menu">
+                <a class="dropdown-item" href="#">Recipes</a>
+                <a class="dropdown-item" href="#">core order</a>
+                <a class="dropdown-item" href="#">actions</a>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </div>
+    </div>
+    </div>
+<div class="mx-2 card border-0 rounded shadow-lg">
+  <h5 class="mx-2 card-title mt-2 mb-0">Basket List<a href="#" type="buttton" class="btn btn-primary float-right" data-toggle="modal" data-target="#Modal"><i class="icon fa fa-plus mr-1" aria-hidden="true"></i>Add Basket</a></h5>
+  <div class="card-body">
+    <form>
+      <div class="form-row">
+        <div class="col-lg col-md-3 col-6">
+          <label for="b-id" class="tab-color">Basket ID</label>
+          <input type="text" class="font form-control" id="b-id" placeholder="Basket ID" required>
+        </div>
+        <div class="col-lg col-md-3 col-6">
+          <label for="b-name" class="tab-color">Basket Name</label>
+          <input type="text" class="font form-control" id="b-name" placeholder="Basket Name"  required>
+        </div>
+      <div class="col-lg col-md-3 col-6">
+        <label for="basket-id" class="tab-color">Basket ID</label>
+        <input type="text" class="font form-control" id="basket-id" placeholder="Basket ID" value="" required>
+      </div>
+        <div class="col-lg col-md-3 col-6">
+          <label for="basket-name" class="tab-color">Basket Name</label>
+          <input type="text" class="font form-control" id="basket-name" placeholder="Basket Name" required>
+        </div>
+        <div class="col-lg col-md-3 col-6">
+          <label for="b-type" class="tab-color">Basket Type</label>
+          <select class="font form-control-sm custom-select" id="b-type">
+          <option selected>Select</option>
+          <option value="1">Basket Type-1</option>
+          <option value="2">Basket Type-2</option>
+          <option value="3">Basket Type-3</option>
+          </select>
+        </div>
+        <div class="col-lg col-md-3 col-6">
+          <label for="fryer" class="tab-color">Fryer</label>
+          <select class="font form-control-sm custom-select" id="fryer">
+            <option selected>Select</option>
+            <option value="1">fryer-1</option>
+            <option value="2">fryer-2</option>
+            <option value="3">fryer-3</option>
+            </select> 
+        </div>
+        <div class="col-lg col-md-3 col-6">
+            <label for="Date"  class="tab-color">From Date</label>
+            <input type="input" class="font form-control date" placeholder="Select Date">
+          </div>
+          <div class="col-lg col-md-3 col-6">
+            <label for="Dates"  class="tab-color">From Date</label>
+            <input type="input" class="font form-control date" placeholder="Select Date">
+          </div>
+        <div class="col-lg col-md-3 col-6">
+          <label for="status" class="tab-color">Status</label>
+          <select class="font form-control-sm custom-select" id="status">
+            <option selected>Select</option>
+            <option value="1">Status-1</option>
+            <option value="2">Status-2</option>
+            <option value="3">Status-3</option>
+            </select>
+          </div>
+        <div class="col-lg col-md-3 col-6">
+            <button type="submit" class="btn btn-sm bg-primary mt-4 text-white " data-toggle="tooltip" title="Search"><i class="fa fa-search" aria-hidden="true"></i></button>
+          <button type="reset" class="btn btn-sm bg-warning mt-4 text-white " data-toggle="tooltip" title="Reset"><i class="fa fa-times" aria-hidden="true"></i></button>
+          </div>
+        </div>
+      </form>
+      </div>
+      </form>
+      </div>
+    </div>
+<div class="mx-2 my-2 card rounded border-0 shadow-lg">
+        <div class="card-body">
+          <div class="table-responsive-sm table-responsive-md table-responsive-lg" >
+          <table class="table table-sm">
+            <thead class="thead-light text-uppercase">
+              <tr>
+                <th scope="col">#ID</th>
+                <th scope="col">Basket ID</th>
+                <th scope="col">Basket Name</th>
+                <th scope="col">Basket Type</th>
+                <th scope="col">Fryer</th>
+                <th scope="col">ISfree</th>
+                <th scope="col">Status</th>
+                <th scope="col" class="text-right">Actions</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>ffghvhuhxy</td>
+                <td>1</td>
+                <td>Basket1</td>
+                <td>small</td>
+                <td>Fryer1</td>
+                <td>Yes</td>
+                <td><span class="act badge badge-white text-success p-2">Active</span></td>
+                <td class="float-right">
+          <span><button type="button" class="btn btn-sm" data-toggle="modal" data-target="#Modals"><i class="act eye fa fa-eye  p-1 rounded"  data-toggle="tooltip" title="View" aria-hidden="true"></i></button></span>
+          <span><button type="button" class="btn btn-sm" data-toggle="modal" data-target="#modal"><i class="act edit fa fa-edit p-1 rounded" data-toggle="tooltip" title="Edit" aria-hidden="true" ></i></button></span>
+          <span><button type="button" class="btn btn-sm" data-toggle="modal" data-target="#exam"><i class="inact delete fa fa-trash p-1 rounded" data-toggle="tooltip" title="Delete" aria-hidden="true"></i></button></span>
+    </td>
+              </tr>
+              <tr>
+                <td>htgxuahah</td>
+                <td>2</td>
+                <td>Basket2</td>
+                <td>medium</td>
+                <td>Fryer2</td>
+                <td>no</td>
+                <td><span class="inact badge badge-white text-danger p-2">In Active</span></td>
+               <td class="float-right">
+                <span><button type="button" class="btn btn-sm" data-toggle="modal" data-target="#Modals"><i class="act eye fa fa-eye  p-1 rounded"  data-toggle="tooltip" title="View" aria-hidden="true"></i></button></span>
+                <span><button type="button" class="btn btn-sm" data-toggle="modal" data-target="#modal"><i class="act edit fa fa-edit p-1 rounded" data-toggle="tooltip" title="Edit" aria-hidden="true" ></i></button></span>
+                <span><button type="button" class="btn btn-sm" data-toggle="modal" data-target="#exam"><i class="inact delete fa fa-trash p-1 rounded" data-toggle="tooltip" title="Delete" aria-hidden="true"></i></button></span>   
+          </td>
+            </tr>
+            </tbody>
+          </table>
+          </div>
+          <div class="row">
+          <div class="col-6">
+          <nav aria-label="Page navigation">
+           <p class="text-left">Showing 1 to 10 of 57 entries</p>
+          </div>
+           <div class="col-6 ">
+            <ul class="pagination float-right">
+              <li class="page-item disabled">
+                <a class="page-link" href="#" tabindex="-1" aria-disabled="true">Previous</a>
+              </li>
+              <li class="page-item"><a class="page-link" href="#">1</a></li>
+              <li class="page-item"><a class="page-link bg-primary text-white" href="#">2</a></li>
+              <li class="page-item"><a class="page-link" href="#">3</a></li>
+              <li class="page-item">
+                <a class="page-link" href="#">Next</a>
+              </li>
+            </ul>
+          </div>
+          </nav>
+      </div> 
+          </div>
+          </div> 
+          <footer class="edit-font text-center bg-white my-4">
+            <a href="https://nalarobotics.com/the-wingman-product.html" target="_blank">Copyright&#169; The Wingman2022</a>
+          </footer> 
+
+          <!--Add basket Modal--> 
+            <div class="modal fade" id="Modal" tabindex="-1" aria-labelledby="ModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-lg">
+              <div class="modal-content">
+                <div class="view modal-header p-1">
+                  <h5 class="text-white modal-title m-1" id="ModalLabel">Add Basket</h5>
+                  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                  </button>
+                </div>
+                <div class="modal-body">
+                  <form>
+                    <div class="form-row"> 
+                      <div class="form-group col-md-6">
+                        <label for="b-id" class="edit-font">Basket ID *</label>
+                        <input type="email" class="font form-control w-100 tab-color" id="b-id" value="0">
+                      </div>
+                      <div class="form-group col-md-6">
+                        <label for="name" class="edit-font">Name *</label>
+                        <input type="text" class="font form-control tab-color" id="name" placeholder="Enter Basket Name">
+                      </div>
+                    </div>
+                    <div class="form-row">
+                      <div class="form-group col-md-6">
+                      <label for="description" class="edit-font">Description</label>
+                      <input type="text" class="font form-control tab-color" id="description" placeholder="Enter Basket Description ">
+                    </div>
+                    <div class="form-group col-md-6">
+                      <label for="b-type" class="edit-font">Basket Type *</label>
+                      <select class="font form-control-sm custom-select tab-color" id="b-type">
+                        <option selected>Select</option>
+                        <option value="1">Baskettype-1</option>
+                        <option value="2">Baskettype-2</option>
+                        <option value="3">Baskettype-3</option>
+                        </select>
+                    </div>
+                    </div>
+                    <div class="form-row">
+                      <div class="form-group col-md-6">
+                      <label for="fryer" class="edit-font">Fryer*</label>
+                      <select class="font form-control-sm custom-select tab-color" id="fryer">
+                        <option selected>Select</option>
+                        <option value="1">fryer-1</option>
+                        <option value="2">fryer-2</option>
+                        <option value="3">fryer-3</option>
+                        </select>
+                    </div>
+                    <div class="form-group col-md-6">
+                      <label for="isfree" class="edit-font">Is Free *</label>
+                      <select class="font form-control-sm custom-select tab-color" id="isfree">
+                        <option selected>Select</option>
+                        <option value="1">place-1</option>
+                        <option value="2">place-2</option>
+                        <option value="3">place-3</option>
+                        </select>
+                    </div>
+                    </div>
+                    <div class="form-row">
+                      <div class="form-group col-md-6">
+                      <label for="inplace" class="edit-font">In place *</label>
+                      <select class="font form-control-sm custom-select tab-color" id="inplace">
+                        <option selected>Select</option>
+                        <option value="1">place-1</option>
+                        <option value="2">place-2</option>
+                        </select>
+                    </div>
+                    <div class="form-group col-md-6">
+                      <label for="sp-location" class="edit-font">Spatula Location</label>
+                      <select class="font form-control-sm custom-select tab-color" id="sp-location">
+                        <option selected>Select</option>
+                        <option value="1">Spatula-1</option>
+                        <option value="2">Spatula-2</option>
+                        </select>
+                    </div>
+                    <div class="form-group col-md-6">
+                      <label for="status" class="edit-font">Status *</label>
+                      <select class="font form-control-sm custom-select tab-color" id="status">
+                        <option selected>Select</option>
+                        <option value="1">Good</option>
+                        <option value="2">Bad</option>
+                      </select>
+                    </div>
+                    </div>
+                </div>
+                <div>
+                  <button type="button" class="font btn btn-primary m-3">Save</button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!--End--> 
+          <!--View Modal--> 
+          <div class="modal fade" id="Modals" tabindex="-1" role="dialog" aria-labelledby="ModalLabel" aria-hidden="true">
+            <div class="modal-dialog rounded modal-lg" role="document">
+         <div class="modal-content">
+           <div class="view modal-header p-2">
+             <h5 class="modal-title text-white" id="Modals">View Basket Details</h5>
+             <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+               <span aria-hidden="true">&times;</span>
+             </button>
+           </div>
+           <div class="modal-body">
+             <table class="edit-font table table-sm table-striped table-sm table-hover">
+               <thead>
+                 <tr>
+                   <th scope="col">ID</th>
+                   <td>60e54e3458e3367la58lee23</td>
+                </tr>
+               </thead>
+               <tbody>
+                 <tr>
+                   <th scope="row">Basket ID</th>
+                   <td>1</td>
+               </tr>
+                 <tr>
+                   <th scope="row">Basket Name</th>
+                   <td>Basket 1</td>
+                 </tr>
+                 <tr>
+                   <th scope="row">Description</th>
+                   <td>Basket 1</td>
+                  </tr>
+                  <tr>
+                   <th scope="row">Basket Type</th>
+                   <td>Small</td>
+               </tr>
+                 <tr>
+                   <th scope="row">Fryer</th>
+                   <td>Fryer 1</td>
+                 </tr>
+                 <tr>
+                   <th scope="row">IsFree</th>
+                   <td>No</td>
+                  </tr>
+                  <tr>
+                   <th scope="row">In Place</th>
+                   <td>Yes</td>
+               </tr>
+                 <tr>
+                   <th scope="row">Spatula Location</th>
+                   <td>1</td>
+                 </tr>
+                 <tr>
+                   <th scope="row">Status</th>
+                   <td><span class="act badge badge-white text-success">active</span></td>
+                  </tr>
+                  <tr>
+                   <th scope="row">Created on</th>
+                   <td>Wed Jul 07 12:18:20 IST 2021</td>
+               </tr>
+                 <tr>
+                   <th scope="row">Updated on</th>
+                   <td>Wed Jul 07 12:18:20 IST 2021</td>
+                 </tr>
+                 <tr>
+                   <th scope="row">Created By</th>
+                   <td>satish.v@nalarobotics.com</td>
+                  </tr>
+                  <tr>
+                   <th scope="row">Updated By</th>
+                   <td>satish.v@nalarobotics.com</td>
+                 </tr>
+               </tbody>
+             </table>
+           </div>
+           <div>
+             <button type="button" class="font btn btn-danger m-3 float-right"data-dismiss="modal">close</button>
+           </div>
+         </div>
+       </div>
+     </div>
+          <!--End--> 
+          <!--Edit Modal--> 
+              <div class="modal fade" id="modal" tabindex="-1" role="dialog" aria-labelledby="Label" aria-hidden="true">
+           <div class="modal-dialog modal-lg" role="document">
+        <div class="modal-content">
+          <div class="view modal-header p-2">
+            <h5 class="modal-title text-white" id="Label">Edit Basket</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+              <form>
+                <div class="form-row">
+                  <div class="form-group col-md-6">
+                    <label for="id-num" class="edit-font">ID *</label>
+                    <input type="email" class="font form-control tab-color" id="id-num" value="fvdhddjdjh3fg" readonly>
+                  </div>
+                  <div class="form-group col-md-6">
+                    <label for="number" class="edit-font">Basket ID *</label>
+                    <input type="text" class="font form-control tab-color" id="number" value="0">
+                  </div>
+                  </div>
+                  <div class="form-row">
+                  <div class="form-group col-md-6">
+                    <label for="name" class="edit-font">Name *</label>
+                    <input type="text" class="font form-control tab-color" id="name" value="Basket 1">
+                  </div>
+                  <div class="form-group col-md-6">
+                  <label for="Description" class="edit-font">Description</label>
+                  <input type="text" class="font form-control tab-color" id="Description" placeholder="Enter Basket Description ">
+                </div>
+              </div>
+              <div class="form-row">
+                <div class="form-group col-md-6">
+                  <label for="btype" class="edit-font">Basket Type *</label>
+                  <input type="text" class="font form-control tab-color" id="btype" value="Small">
+                </div>
+                  <div class="form-group col-md-6">
+                  <label for="fryer" class="edit-font">Fryer*</label>
+                  <select class="font custom-select tab-color" id="fryer">
+                    <option>Select</option>
+                    <option value="1">Fryer 1</option>
+                    <option value="2" selected>Fryer 2</option>
+                    <option value="3">Fryer 3</option>
+                    </select>
+                </div>
+                </div>
+                <div class="form-row">
+                  <div class="col-md-6">
+                <div class="form-group">
+                  <label for="name" class="edit-font">Is Free *</label>
+                  <select class="font custom-select tab-color" id="name">
+                    <option value="0" selected>Yes</option>
+                    <option value="1">No</option>
+                    </select>
+                  </div>
+                </div>
+                  <div class="form-group col-md-6">
+                  <label for="inplace" class="edit-font">In place *</label>
+                  <select class="font custom-select tab-color" id="inplace">
+                    <option>Select</option>
+                    <option value="0" selected>Yes</option>
+                    <option value="1">No</option>
+                    </select>
+                 </div>
+                 </div>
+                 <div class="form-row">
+                <div class="form-group col-md-6">
+                  <label for="sp-location" class="edit-font">Spatula Location</label>
+                  <select class="font custom-select tab-color" id="sp-location">
+                    <option selected disabled hidden>1</option>
+                    <option value="1">sp-1</option>
+                    <option value="2">sp-2</option>
+                    <option value="3">sp-3</option>
+                    </select>
+                </div>
+                <div class="form-group col-md-6">
+                  <label for="status" class="edit-font">Status *</label>
+                  <select class="font custom-select tab-color" id="status">
+                    <option selected disabled hidden>Active</option>
+                    <option value="1">Good</option>
+                    <option value="2">Average</option>
+                    <option value="3">Not Bad</option>
+                    </select>
+                </div>
+                </div>
+            </div>
+          <div>
+            <button type="button" class="font btn btn-warning mx-3 my-3 text-white">Update</button>
+          </div>
+        </div>
+      </div>
+    </div>    
+          <!--End--> 
+          <!--Delete Modal--> 
+          <div class="modal fade" id="exam" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+       <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="view modal-header p-2 rounded">
+        <h5 class="modal-title text-white" id="ModalLabel">Delete Confirmation</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body edit-font">
+       Are you sure you want to delete this record?
+      </div>
+      <div class="modal-footer border-0">
+        <button type="button" class="border border-danger rounded btn-sm text-danger" data-dismiss="modal">No</button>
+        <button type="button" class="btn btn-success rounded btn-sm text-white" data-dismiss="modal">Yes</button>
+      </div>
+    </div>
+  </div>
+</div>
+          <!--End--> 
+</body>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.min.js" integrity="sha384-+sLIOodYLS7CIrQpBjl+C7nPvqq+FbNUBDunl/OZv93DB7Ln/533i8e/mZXLi/P+" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.7.1/js/bootstrap-datepicker.js"></script>
+   <script>
+    $('.date').datepicker({
+});
+$(function () {
+  $('[data-toggle="tooltip"]').tooltip()
+})
+    </script>
+  </body>
+</html>
+
+
+
+
